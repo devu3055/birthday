@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Heet — From Param Mitra to Forever ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="intro" class="intro">
+    <div class="intro-card">
+      <span class="tiny">A little universe made for</span>
+      <h1>Heet <span>♡</span></h1>
+      <p>Some stories begin with a message.<br>Ours began on Instagram.</p>
+      <button id="enterBtn">Open your surprise <span>→</span></button>
+    </div>
+    <div class="stars"></div>
+  </div>
+
+  <main id="site" class="hidden">
+    <nav class="nav">
+      <div class="logo">D <span>×</span> H</div>
+      <div class="nav-links">
+        <a href="#story">Our Story</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#letter">Letter</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <p class="eyebrow">16 · 10 · 2006 — THE DAY MY FAVORITE PERSON WAS BORN</p>
+        <h1>Happy Birthday,<br><em>Heet.</em></h1>
+        <p class="hero-sub">From an Instagram notification to the person I want beside me for all my tomorrows.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#story">Our little story ↓</a>
+          <button class="ghost" id="musicBtn">♫ Play our moment</button>
+        </div>
+      </div>
+      <div class="floating-heart h1">♡</div>
+      <div class="floating-heart h2">♡</div>
+      <div class="floating-heart h3">♡</div>
+    </section>
+
+    <section id="story" class="section story">
+      <div class="section-tag">01 — HOW IT STARTED</div>
+      <div class="story-grid">
+        <div>
+          <h2>Friends.<br>Best friends.<br><span>Param Mitra.</span><br>And then… us.</h2>
+        </div>
+        <div class="story-copy">
+          <p class="big">We didn't know the first chat would become the beginning of something this beautiful.</p>
+          <p>Two years ago, we were simply two people talking on Instagram. Somewhere between random conversations, calls, rides, secrets, laughter and being there for each other, you became my safest person.</p>
+          <p>And today, I don't just call you my boyfriend. In my heart, you're the person I want to call <strong>my future husband.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="section timeline-section">
+      <div class="section-tag">02 — OUR TIMELINE</div>
+      <div class="timeline-heading">
+        <h2>The dates that<br><em>became memories.</em></h2>
+        <p>Every “first” has a place in my heart.</p>
+      </div>
+      <div id="timelineList" class="timeline"></div>
+    </section>
+
+    <section class="section birthday">
+      <div class="birthday-card">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="cake">♡</div>
+        <p class="eyebrow">TODAY'S MAIN CHARACTER</p>
+        <h2>HEET</h2>
+        <p>19 years of you.<br>And hopefully, a lifetime of you & me.</p>
+        <button id="wishBtn" class="primary">Make a birthday wish ✨</button>
+        <div id="wishMessage" class="wish-message"></div>
+      </div>
+    </section>
+
+    <section id="letter" class="section letter-section">
+      <div class="section-tag">03 — A LETTER FOR YOU</div>
+      <div class="letter">
+        <div class="paperclip">♡</div>
+        <p class="letter-date">For Heet, on your birthday</p>
+        <h2>To my favorite person,</h2>
+        <p>Happy Birthday to the boy who slowly became my best friend, my param mitra, my home, and now my love.</p>
+        <p>If someone had shown me our future when we first started talking on Instagram, I probably wouldn't have believed them. We went from strangers, to friends, to best friends, to something that neither of us could ignore.</p>
+        <p>I love all the little chapters we've collected — our first call, our first ride, our first meeting, the nervous little moments, the laughs, the hugs, the kisses, the gifts, the jatra, and finally the moment when our feelings became official.</p>
+        <p>Thank you for choosing me. Thank you for understanding me. Thank you for being the person I can laugh with, annoy, trust, and love all at once.</p>
+        <p>Today I only have one wish: that life gives you everything you dream of — and that, whenever you look beside you, I'm still there.</p>
+        <p class="signature">Happy birthday, my Heet.<br><span>From your Devanshi, with all my heart. ♡</span></p>
+      </div>
+    </section>
+
+    <section class="section final">
+      <p class="eyebrow">AND THIS ISN'T THE END</p>
+      <h2>It's just our<br><em>first chapter.</em></h2>
+      <p>Friends → Best Friends → Param Mitra → Boyfriend →<br><strong>Future Husband.</strong></p>
+      <div class="forever">D <span>♡</span> H</div>
+      <button id="surpriseBtn" class="primary">One last surprise 💌</button>
+    </section>
+
+    <footer>Made with an unreasonable amount of love by Devanshi · For Heet · 16.10.2006</footer>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-box">
+      <button id="closeModal" class="close">×</button>
+      <div class="envelope">💌</div>
+      <p class="eyebrow">SECRET MESSAGE</p>
+      <h2>Heet, if you're reading this…</h2>
+      <p>You've officially unlocked the one thing I can't put into a website:</p>
+      <div class="secret">how much I love you.</div>
+      <p>Now come here and give your birthday girl a hug. ♡</p>
+    </div>
+  </div>
+
+  <div id="hearts"></div>
+  <audio id="bgMusic" loop preload="none">
+    <!-- Add your own song file as "our-song.mp3" in this folder if you want music. -->
+    <source src="our-song.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
